@@ -13,6 +13,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Ratio from 'react-bootstrap/Ratio';
 
 
 
@@ -20,13 +21,18 @@ import Card from 'react-bootstrap/Card';
 
 
 
-export default function Home() {
+export default function Pricing() {
   return (
     <Layout>
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
 
-
-
-<section className="cChoreoSection cGrayBackground">
+<link rel="stylesheet" href="https://wso2.cachefly.net/wso2/sites/all/2023/sliders/jqueryui.min.css" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://wso2.cachefly.net/wso2/sites/all/2023/sliders/jquery-ui-slider-pips.css" crossorigin="anonymous"/>
+  <script src="https://wso2.cachefly.net/wso2/sites/all/2023/sliders/jquery-ui.min.js" crossorigin="anonymous"></script>
+  <script src="https://wso2.cachefly.net/wso2/sites/all/2023/sliders/jquery-ui-slider-pips.js" crossorigin="anonymous"></script>
+  <script src=" https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/choreo-calculator.js" crossorigin="anonymous"></script>
+ 
+<section className="cChoreoSection cGrayBackground cInnerPage">
       <Container>
         <Row>
           <Col sm={12} md={1} lg={1}></Col>
@@ -49,6 +55,231 @@ export default function Home() {
     </section>
 
 
+    <section className="cChoreoSection cSectionBelowHighlight cChoreoSectionx">
+  <Container className="cWhiteBoxRound">
+    <Row>
+      <Col lg={12} className="cCenterTitleCOniatier">
+      <div>
+        <div>
+          <Row className="cHighlightedRow">
+            <div className="clearfix cfix"></div>
+            <Col lg={2} ></Col>
+            <Col lg={4} className="cPriceColContainer">
+            <Card className="cPriceCol cMiddle cFreeCol">
+              <div className="h4ContainerFree">
+                <h4>Developer</h4>
+                <br />
+                <span className="cPrice">
+                  <div className="cFirstRow">
+                    <span className="b2cBasic">$0</span>
+                  </div>
+                </span>
+                <p className="DecMinH">Ideal for developers.</p>
+                <div className="Sadd">
+                  <p className="DecMinH2 mB">Upto 5 components free</p>
+                  <p className="DecMinH"> +$5 per additional component +{' '} <a href="#Calculator" aria-label="resource usage"> resource usage </a>{' '} ($100 credits per month free)</p>
+                </div>
+              </div>
+              <div className="cBoxCTAcontainer">
+                <a className="cContactSales TRPricingGetStart" href="https://console.choreo.dev/" aria-label="Get Started"> Get Started </a>
+              </div>
+              <ul>
+                <li>2 projects</li>
+                <li>5 developers</li>
+                <li> Public repo </li>
+                <li>Scales down to 0 when not in use</li>
+                <li>Up to 10 transactions per second</li>
+                <li>Supports only Choreo’s Cloud Data Plane or a personal private data plane</li>
+              </ul>
+              <p></p>
+            </Card>
+            </Col>
+            <Col lg={4} className="cPriceColContainer">
+            <Card className="cPriceCol cMiddle cFreeCol">
+              <div className="h4ContainerFree">
+                <h4>Pay-As-You-Go</h4>
+                <br />
+                <span className="cPrice">
+                  <div className="cFirstRow">
+                    <span className="b2cBasic">$150</span>
+                    <span className="cNormalText">/component per month</span>
+                  </div>
+                </span>
+                <p className="DecMinH">Ideal for teams collaboratively building cloud native apps.</p>
+                <div className="Sadd">
+                  <p className="DecMinH2">Sign up with your work email to get 5 components free for 6 months</p>
+                  <p className="DecMinH"> +{' '} <a href="#Calculator" aria-label="resource usage"> resource usage </a>{' '} ($1000 credits for 6 months free) </p>
+                </div>
+              </div>
+              <div className="cBoxCTAcontainer">
+                <a className="cContactSales TRPricingGetStart" href="https://console.choreo.dev/" aria-label="Get Started"> Get Started </a>
+              </div>
+              <ul>
+                <li>Unlimited projects</li>
+                <li>Unlimited developers</li>
+                <li>Private or public repo</li>
+                <li>Can scale up without restrictions</li>
+                <li>You decide how to scale down</li>
+                <li>Unlimited transactions per second</li>
+                <li>Supports both Choreo’s Cloud Data Plane and Private Data Planes</li>
+              </ul>
+              <p></p>
+            </Card>
+            </Col>
+            <Col lg={2} ></Col>
+          </Row>
+        </div>
+      </div>
+      </Col>
+    </Row>
+  </Container>
+</section>
+
+
+
+<section className="cChoreoSection cGrayBackground">
+<Container>
+ <Row>
+      <Col sm={12} md={12} lg={12}>
+        <div className="cSuppport">
+          <h2>Resource Cost Estimation</h2>
+        </div>
+      </Col>
+      <Col sm={12} md={4} lg={4}>&nbsp;</Col>
+  
+     <Col sm={12} md={4} lg={4}>
+        <div className="cTabCOntrolContainer ">
+          <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li className="nav-item">
+              <a className="nav-link cPricingTabs cRightButton active" id="monthly" data-toggle="pill" href="" role="tab" aria-controls="pills-home" aria-selected="true" aria-label="Monthly">Monthly</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link cPricingTabs cLeftButton" id="hourly" data-toggle="pill" href="" role="tab" aria-controls="pills-profile" aria-selected="false" aria-label="Hourly">Hourly</a>
+            </li>
+          </ul>
+        </div>
+      </Col>
+     <Col sm={12} md={4} lg={4}>&nbsp;</Col>
+      <Col sm={12} md={12} lg={12}>
+        <div className="cPriceCol tab-content" id="pills-tabContent">
+          <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+           <Col sm={12} md={4} lg={4}>&nbsp;</Col>
+            <div className="col-sm-12 col-md-4 col-lg-4 cTextAlignCenter cTopTotalCost">
+              <span className="cSubTotalTitle" id="total_cost_lable">Total Cost</span>
+              <span className="b2cBasic" id="total_cost_amount">$0.00</span>
+              <span className="cSubTotalTitle" id="required_more">If you require more <a href="/contact/?ref=choreopricing" aria-label="contact us">contact us</a>.</span>
+            </div>
+           <Col sm={12} md={4} lg={4}>&nbsp;</Col>
+            <div className="clearfix"></div>
+            <Row>
+            <Col sm={12} md={8} lg={8} className='cSpLine'>
+              <div className="colwrap cRightCol">
+
+
+                <Col sm={12} md={4} lg={4} className='cSmallCol'>
+                  <div className="cSliderContainer">
+                    <label>CPU</label>
+                    <div className="cSlider">
+                      <div id="memory-slider" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0.0</span></span></div>
+                    </div>
+                  </div>
+                </Col>
+
+                <Col sm={12} md={4} lg={4} className='cSmallCol'>
+                  <div className="cSliderContainer">
+                    <label>RAM</label>
+                    <div className="cSlider">
+                      <div id="memory-slider2" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0.0</span></span></div>
+                    </div>
+                  </div>
+                </Col>
+
+                <Col sm={12} md={4} lg={4} className='cSmallCol'>
+                  <div className="cSliderContainer">
+                    <label>Storage</label>
+                    <div className="cSlider">
+                      <div id="memory-slider4" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
+                    </div>
+                  </div>
+                </Col>
+             
+                <Col sm={12} md={12} lg={2} className='cSmallCol'>
+                  <div className="cSliderContainer">
+                    <label>Network Egress</label>
+                    <div className="cSlider">
+                      <div id="memory-slider3" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
+                    </div>
+                  </div>
+                </Col>
+                <div className="cTextAlignCenter cSubTotals" id="resource_cost_section">
+                  <span className="cSubTotalTitle">Resource Cost</span>
+                  <span className="b2cBasic" id="resource_cost_amount">$0.00</span>
+                </div>
+              </div>
+            </Col>
+           <Col sm={12} md={4} lg={4}>
+              <div className="colwrap cLeftCol">
+                <div className="cSliderContainer">
+                  <div className="form__group">
+                    <div className="form__radio-group">
+                      <ul className="cRadioUL">
+                        <li>
+                          <input type="radio" name="component_options" id="developer" value="developer" className="form__radio-input" checked="checked"/>
+                          <label className="form__label-radio" for="developer">
+                            <span className="form__radio-button"></span>Developer
+                          </label>
+                        </li>
+                        <li>
+                          <input type="radio" name="component_options" id="payg" value="payg" className="form__radio-input"/>
+                          <label className="form__label-radio" for="payg">
+                            <span className="form__radio-button"></span> PAYG
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="cSliderContainer" id="work_email_div">
+                  <div className="form__group">
+                    <div className="form__radio-group">
+                      <label for="work_email">
+                        <input type="checkbox" id="work_email" name="work_email"/> Sign up with work email
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="cSliderContainer">
+                  <label>Components</label>
+                  <div className="cSlider">
+                    <div id="memory-slider5" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
+                  </div>
+                </div>
+                <div className="cTextAlignCenter cSubTotals" id="component_cost_section">
+                  <span className="cSubTotalTitle">Component Cost</span>
+                  <span className="b2cBasic" id="component_cost_amount">$0.00</span>
+                </div>
+              </div>
+            </Col>
+            </Row>
+          </div>
+
+        </div>
+      </Col>
+   </Row>
+   </Container>
+</section>
+
+
+
+
+
+
+
+
+<iframe src="https://wso2.com/choreo/pricing-calculator/" width="100%" type="text/html" frameBorder="0" allowTransparency="true" ></iframe>
+       
 
 
 
@@ -63,97 +294,447 @@ export default function Home() {
 
 
     <Accordion>
+
+
+    <table className="cTable cTHeaders">
+                <tbody><tr>
+                  <td className="cTD1"></td>
+                  <td className="cTD2">
+                    Developer
+           
+                  </td>
+                  <td className="cTD3">
+                    Pay-As-You-Go
+               
+               
+                  </td>
+            
+  
+  
+                </tr>
+              </tbody>
+              </table>
+
       <Accordion.Item eventKey="0">
         <Accordion.Header>Developer and Operational</Accordion.Header>
-        <Accordion.Body>
-        
-        <table class="cTable">
-                    <tbody><tr>
-                      <td class="cTD1">
-                        Manage source with GitHub repo
-                      </td>
-                      <td class="cTD2">✓ </td>
-                      <td class="cTD3">✓
-                      </td>
-                      <td class="cTD4">✓</td>
-                    </tr>
-                    <tr>
-                      <td class="cTD1">
-                        Continuous integration (CI)
-                      </td>
-                      <td class="cTD2">✓</td>
-                      <td class="cTD3">✓</td>
-                      <td class="cTD4">✓</td>
-                    </tr>
-                    <tr>
-                      <td class="cTD1">
-                        Continuous delivery (CD)
-                      </td>
-                      <td class="cTD2">✓</td>
-                      <td class="cTD3">✓</td>
-                      <td class="cTD4">✓</td>
-                    </tr>
-                    <tr>
-                      <td class="cTD1">
-                        Deployments to cloud platforms
-                      </td>
-                      <td class="cTD2">Choreo Cloud</td>
-                      <td class="cTD3" >
-                        Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster <a tabindex="0" type="button" class="popover-icon" data-popover-content="#Azure" data-toggle="popover" data-placement="top" data-original-title="" title="" aria-label="i">i</a>
-                        
-                        <div id="Azure" >
-                          <div class="popover-body">
-                            <a type="button" class="popover-close close" aria-label="
-                            ">
-                            </a>
-                            <p>Support for OpenShift, VMWare Tanzu, and any Kubernetes Cluster is in the
-                              roadmap.</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="cTD4" >
-                        Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster <a tabindex="0" type="button" class="popover-icon" data-popover-content="#Azure2" data-toggle="popover" data-placement="top" data-original-title="" title="" aria-label="i">i</a>
-                        
-                        <div id="Azure2" >
-                          <div class="popover-body">
-                            <a type="button" class="popover-close close" aria-label="
-                            ">
-                            </a>
-                            <p>Support for OpenShift, VMWare Tanzu, and any Kubernetes Cluster is in the
-                              roadmap.</p>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody></table>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Manage source with GitHub repo
+                                    </td>
+                                    <td className="cTD2">✓ </td>
+                                    <td className="cTD3">✓
+                                    </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Continuous integration (CI)
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Continuous delivery (CD)
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Deployments to cloud platforms
+                                    </td>
+                                    <td className="cTD2">Choreo Cloud</td>
+                                    <td className="cTD3" >
+                                       Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster 
+                                    </td>
+                                    <td className="cTD4">
+                                       Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <Accordion.Header>Integration</Accordion.Header>
+        <Accordion.Body className='card-body'>
+
+ <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Triggers
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Scheduled jobs
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           
+
+        
         </Accordion.Body>
       </Accordion.Item>
 
 
       <Accordion.Item eventKey="2">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+        <Accordion.Header> AI-Assisted</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                      <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       API testing with natural language
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓ </td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Anomaly detection
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓ </td>
+                                 </tr>
+                               </tbody>
+                           </table>
+
         </Accordion.Body>
       </Accordion.Item>
+
+
+
+      <Accordion.Item eventKey="3">
+        <Accordion.Header>API Management</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        
+<table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Create new APIs
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Secure APIs
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Test APIs
+                                    </td>
+                                    <td className="cTD2">✓ </td>
+                                    <td className="cTD3">✓ </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       API developer portal
+                                    </td>
+                                    <td className="cTD2">✓ </td>
+                                    <td className="cTD3">✓ </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       API analytics and insights
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">✓ </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       API requests and calls
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">
+                                       Limited
+                                    </td>
+                                    <td className="cTD4">Unlimited</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       API monetization
+                                    </td>
+                                    <td className="cTD2">✓ </td>
+                                    <td className="cTD3">✓ </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+      <Accordion.Item eventKey="4">
+        <Accordion.Header>Monitoring and Observability</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Monitoring dashboard
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Logs
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">
+                                       Limited
+                                    </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Traces
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">
+                                       Limited
+                                    </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Alerting
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Third-party extensions
+                                    </td>
+                                    <td className="cTD2">
+                                       <strong>-</strong>
+                                    </td>
+                                    <td className="cTD3">
+                                       Limited
+                                    </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>Security</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       SSO for API developer portal
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Enterprise login
+                                    </td>
+                                    <td className="cTD2"><strong>-</strong></td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Container manifest scanning
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Container static scanning
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Run-time container security
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Role-based access control
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Third party identity provider (IdP)
+                                    </td>
+                                    <td className="cTD2">-</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+
+
+
+
+
+
+      <Accordion.Item eventKey="7">
+        <Accordion.Header>Platform Services</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       MySQL
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">Select a plan that suits you</td>
+                                    <td className="cTD4">Select a plan that suits you</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       PostgreSQL
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">Select a plan that suits you</td>
+                                    <td className="cTD4">Select a plan that suits you
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Redis
+                                    </td>
+                                    <td className="cTD2">
+                                       Limited
+                                    </td>
+                                    <td className="cTD3">Select a plan that suits you</td>
+                                    <td className="cTD4">Select a plan that suits you</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Scale to zero
+                                    </td>
+                                    <td className="cTD2">✓</td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+        </Accordion.Body>
+      </Accordion.Item>
+
+
+
+
+      <Accordion.Item eventKey="8">
+        <Accordion.Header>Utility Services</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Custom domain mapping
+                                    </td>
+                                    <td className="cTD2">
+                                       -
+                                    </td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Creating new user roles
+                                    </td>
+                                    <td className="cTD2">
+                                       Only default roles allowed
+                                 </td>
+                                    <td className="cTD3">✓</td>
+                                    <td className="cTD4">✓
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                       Number of environments
+                                    </td>
+                                    <td className="cTD2">
+                                       2
+                                    </td>
+                                    <td className="cTD3">Unlimited</td>
+                                    <td className="cTD4">Unlimited</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+        </Accordion.Body>
+      </Accordion.Item>
+
 
 
 
@@ -181,527 +762,10 @@ export default function Home() {
 
 
 
-      <div className="cIntro cGrayBackground">
-        <Container>
-          <Row>
-            <Col sm={12} md={6}>
-              <h1>Choreo Pricing</h1>
-              
-            </Col>
-            <Col sm={12} md={2}>&nbsp;</Col>
-            <Col sm={12} md={4}></Col>
-          </Row>
-
-
-        </Container>
-
-      </div>
-
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Discover building blocks for your Cloud Native Application</h2>
-
-            </Col>
-            <Col sm={12} md={2}>&nbsp;</Col>
-            <Col sm={12} md={8}>
-              <Row>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.slack_0.8.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.github_0.9.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.asgardeo_0.5.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.asb_1.2.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.salesforce_0.10.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.calendar_0.11.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.shopify_1.4.1.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.hubspot_0.9.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.mail_0.10.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.sheets_0.9.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.quickbooks_1.2.0.png" />
-                  </div>
-                </Col>
-                <Col sm={12} md={2}>
-                  <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.twilio_0.9.0.png" />
-                  </div>
-                </Col>
-
-              </Row>
-            </Col>
-            <Col sm={12} md={2}>&nbsp;</Col>
-
-
-
-
-          </Row>
-        </Container>
-      </div>
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Full stack hosting, with security: webapps, jobs, databases, APIs</h2>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
-              </div>
-
-            </Col>
-            </Row>
-
-
-            <Row>
-            <Col sm={12} md={4} className='cCenterButton'></Col>
-
-            <Col sm={12} md={4} className='cCenterButton'>
-           
-            <a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">Explore all Choreo features</a>
-
-
-            </Col>
-
-            <Col sm={12} md={4} className='cCenterButton'></Col>
-
-          </Row>
-
-         
-
-        </Container>
-
-      </div>
-
-
-
-
-
-
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>What can you build with Choreo?</h2>
-
-            </Col>
-            <Col sm={12} md={12}>
-
-
-
-
-
-              <div className='cWhiteRoundedHighlightedBox'>
-                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-                  <Row>
-                    <Col sm={5}>
-                      <Nav variant="pills" className="flex-column cTabs">
-                        <Nav.Item>
-                          <Nav.Link eventKey="first"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3></Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="second"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3></Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="th"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3></Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link eventKey="4th"><h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h3></Nav.Link>
-                        </Nav.Item>
-                      </Nav>
-                    </Col>
-                    <Col sm={7}>
-                      <Tab.Content>
-                        <Tab.Pane eventKey="first">
-                          <video autoplay="" loop="" muted="" playsinline="" width="100%" height="auto"><source src="//wso2.cachefly.net/wso2/sites/all/2023/choreo/choreo-deployment.mp4" type="video/mp4" /></video>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                          <video autoplay="" loop="" muted="" playsinline="" width="100%" height="auto"><source src="//wso2.cachefly.net/wso2/sites/all/2023/choreo/choreo-deployment.mp4" type="video/mp4" /></video>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="th">
-                          <video autoplay="" loop="" muted="" playsinline="" width="100%" height="auto"><source src="//wso2.cachefly.net/wso2/sites/all/2023/choreo/choreo-deployment.mp4" type="video/mp4" /></video>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="4th">
-                          <video autoplay="" loop="" muted="" playsinline="" width="100%" height="auto"><source src="//wso2.cachefly.net/wso2/sites/all/2023/choreo/choreo-deployment.mp4" type="video/mp4" /></video>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </Tab.Pane>
-                      </Tab.Content>
-                    </Col>
-                  </Row>
-                </Tab.Container>
-              </div>
-
-
-
-
-
-
-
-            </Col>
-
-
-
-
-
-
-          </Row>
-        </Container>
-      </div>
-
-
-
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Resource Cost Estimation</h2>
-
-            </Col>
-            <Col sm={12} md={12}>
-
-
-
-
-
-              <div className='cWhiteRoundedHighlightedBox'>
-              <Row>
-
-             
-           
-              <Col sm={12} md={6} className='cCommunityText'>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed do eiusmod</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-<a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/pricing/" target="_blank" rel="noopener" aria-label="Learn More">Lorem ipsum </a>
-
-              </Col>
-              <Col sm={12} md={6}></Col>
-
-
-
-              </Row>
-
-              </div>
-
-            </Col>
-          </Row></Container>
-      </div>
-
-
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Resources</h2>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
-
-                <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
-
-
-
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
-                </div>
-
-              </div>
-
-            </Col>
-           
-            <Col sm={12} md={4}>
-              <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
-
-                <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
-
-
-
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
-                </div>
-
-              </div>
-
-            </Col>
-            <Col sm={12} md={4}>
-              <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
-
-                <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
-
-
-
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
-                </div>
-
-              </div>
-
-            </Col>
-
-            <Col sm={12} md={6}>
-              <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/640x200/D9D9D9" />
-
-                <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
-
-
-
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
-                </div>
-
-              </div>
-
-            </Col>
-            <Col sm={12} md={6}>
-              <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/640x200/D9D9D9" />
-
-                <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
-
-
-
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
-                </div>
-
-              </div>
-
-            </Col>
-
-
-
-
-
-
-          </Row>
-
-          <Row>
-            <Col sm={12} md={4} className='cCenterButton'></Col>
-
-            <Col sm={12} md={4} className='cCenterButton'>
-           
-            <a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">More  Choreo Resources</a>
-
-
-            </Col>
-
-            <Col sm={12} md={4} className='cCenterButton'></Col>
-
-          </Row>
-
-
-        </Container>
-
-      </div>
-
-
-
-
-
-
-
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Community</h2>
-
-            </Col>
-            <Col sm={12} md={12}>
-
-
-
-
-
-              <div className='cWhiteRoundedHighlightedBox'>
-              <Row>
-
-              <Col sm={12} md={3}></Col>
-              <Col sm={12} md={2}>
-                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/discord-icon-choreo.png"/>
-              </Col>
-              <Col sm={12} md={4} className='cCommunityText'>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed do eiusmod</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-<a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">More  Choreo Resources</a>
-
-              </Col>
-              <Col sm={12} md={3}></Col>
-
-
-
-              </Row>
-
-              </div>
-
-            </Col>
-          </Row></Container>
-      </div>
-
-
-
-
-
-
-      <div className="cSection cGrayBackground">
-        <Container>
-          <Row>
-            <Col sm={12} md={12} className="cCenterButton">
-              <h2>Get Started with Choreo</h2>
-  
-           
-            </Col>
-
-            <Col sm={12} md={4} className="cCenterButton">
-
-            </Col>
-            <Col sm={12} md={4} className="cCenterButton">
-            <a class="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX cSignupbutton" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">Sign up to continue</a>
-            </Col>
-            <Col sm={12} md={4} className="cCenterButton">
-
-            </Col>
-
-          
-          </Row>
-          </Container>
-      </div>
-
-
 
     </Layout>
   )
 }
+
+
+

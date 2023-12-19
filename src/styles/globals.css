@@ -143,6 +143,7 @@ h3 {
 	/* box-shadow: 2px 5px 10px 0 rgb(0 0 0 / 20%); */
 	background-color: #F7F8FB;
   width: 100%;
+  min-height: 440px;
 
 }
 
@@ -182,7 +183,7 @@ h3 {
 }
 
 .cLogoTile {
-  padding: 30px;
+  padding: 15px;
 }
 
 .cLogoTile img {
@@ -590,7 +591,7 @@ a.cSignupbutton.cChoreoButton  {
 }
 
 
- dropdown-menu.show{display:inline-block;}
+ /* .dropdown-menu.show{display:inline-block;} */
  .cChoreoAsgardeo{margin-left: -20rem;}
  .cChoreoNav.navbar.navbar-expand-lg.navbar-light.bg-light{ padding: 0.5rem 0 0.2rem; background-color:#fff!important;background-color: #ffffff!important; box-shadow: 5px 3px 7px 2px #cac7c733;    z-index: 9999;}
  .cChoreoNav .cMenuMargin{z-index:999;}
@@ -774,6 +775,21 @@ a.cSignupbutton.cChoreoButton  {
         }
 
 
+        
+
+
+        /* pricing */
+
+        h2.accordion-header {
+          margin-bottom: 0 !important;
+        }
+
+
+
+
+
+
+
 @media screen and (max-width:990px) {
   .cBoxCTAcontainer {
     position: static;
@@ -808,6 +824,940 @@ a.cSignupbutton.cChoreoButton  {
 
 
 
+/* ENTERPRISE */
+.cChoreoSection p, .cChoreoSection h1, .cChoreoSection h2, .cChoreoSection h3, .cChoreoSection h4, .cChoreoSection h5, .cSmallIcon {
+	font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.cOrangeTEXT {
+  color: #F37321 !important;
+}
+
+ul.cChoreoPricingTabs {
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  border: 1px solid #DEDEDE !important;
+  border-radius: 6px;
+  padding: 0 !important;
+  font-size: 0;
+}
+
+ul.cChoreoPricingTabs li.nav-item {
+  display: inline-block;
+  border: none !important;
+  border-right: 1px solid #e3e3e3 !important;
+}
+
+ul.cChoreoPricingTabs li.nav-item a,
+ul.cChoreoPricingTabs li.nav-item a.active {
+  border: none !important;
+  border-radius: 6px;
+  padding: 11px 32px;
+  font-size: 14px;
+}
+
+ul.cChoreoPricingTabs li.nav-item a.active {
+  background-color: #231F20 !important;
+  color: #fff !important;
+}
+
+.container.cWhiteBoxRound {
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.1);
+  /* min-height: 915px; */
+}
+
+.cChoreoSection h4 {
+  color: #fff !important;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #5567d5;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.cPriceCol {
+
+  /* padding: 30px 30px; */
+  border-radius: 30px !important;
+  min-height: 760px;
+  /* background-color: #fff !important; */
+  position: relative;
+  box-shadow: 0 1px 50px 0 rgba(0, 0, 0, 0.09);
+  /* background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 48%, rgba(85,103,213,0.43463322829131656) 100%); */
+}
+
+.cPriceCol.cB2Ecol {
+  /* min-height: 685px; */
+}
+
+.cPriceCol.cEnterpriseCol {
+  /* background: rgb(236,213,223);
+     background: linear-gradient(161deg, rgba(236,213,223,1) 0%, rgba(255,255,255,1) 76%, rgba(245,224,210,1) 100%);  */
+  /* background: rgb(32,50,59);
+     background: linear-gradient(161deg, rgba(32,50,59,1) 62%, rgba(243,115,33,1) 100%);  */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4626444327731093) 48%, rgba(85, 103, 213, 1) 100%);
+}
+
+.cPriceCol.cFreeCol {
+  /*     
+      background: rgb(244, 196, 165);
+      background: linear-gradient(13deg, rgba(244, 196, 165, 1) 23%, rgba(255, 255, 255, 1) 100%); */
+}
+
+
+.cPriceCol.cEnterpriseCol {
+  color: #fff;
+}
+
+.cPriceCol.cEnterpriseCol ul li {
+  color: #fff;
+}
+
+.cPriceCol.cEnterpriseCol p {
+  color: #fff !important;
+}
+
+.cPriceCol.cGrayBox.cFreeBox {
+  min-height: 630px;
+}
+
+.cPriceCol.cLeft {
+  border-radius: 30px;
+}
+
+.cPriceCol.cRight {
+  border-radius: 30px;
+}
+
+.cPriceCol .cPrice {
+  font-size: 0px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.cAnnualText {
+  font-size: 20px;
+  display: inline-block !important;
+  width: 100%;
+  margin-bottom: 10px;
+  /* background: blue; */
+}
+
+.cAditionalText {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aeaeae;
+}
+
+.cPriceCol.cMiddle .cPrice {
+  display: inline-block;
+  font-size: 0;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.cPriceCol:hover {
+  transition: all 0.3s;
+  z-index: 99;
+  /* border: 1px solid #5567D5 !important; */
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cPriceCol.cB2CFree,
+.cPriceCol.cGrayBox {
+  width: 100%;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+.cB2CFree a {
+  margin-top: 20px;
+}
+
+.cPriceCol ul {
+  padding: 0;
+  margin: 0 30px;
+  padding-left: 10px;
+}
+
+.cPriceCol ul li {
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+  background-image: url(//wso2.cachefly.net/wso2/sites/all/2023/choreo/choreo-tick-purple2.png);
+  background-repeat: no-repeat;
+background-position: top 5px left 3px;
+  background-size: 15px;
+}
+
+.cPriceCol ul.cSubBullet li {
+  list-style: disc !important;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 3px;
+  background-image: none !important;
+  background-repeat: no-repeat;
+  background-position: left 8px;
+  background-size: 15px;
+  margin-left: 0;
+}
+
+ul.cSubBullet {
+  padding-left: 0 !important;
+}
+
+.cPriceCol span {
+  display: inline-block;
+  /* width: 100%; */
+}
+
+.b2cBasic,
+.b2cProfsnal,
+.b2bProfsnal,
+.b2eProfsnal {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  display: inline-block;
+  color: #5567D5;
+}
+
+.cFirstRow {
+  display: inline-block;
+  /* background-color: red; */
+  margin-bottom: 5px;
+  padding: 2rem 0 0;
+}
+
+.cPriceCol span span.cNormalText,
+.cAnnualText span {
+  width: auto;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 0px;
+  color: #5567D5;
+}
+
+.cAnnualText {
+  font-size: 20px;
+}
+
+.cContactSales,
+.cDownloadProduct {
+word-spacing: 3px;
+  border-radius: 10px;
+  background-color: #000000 !important;
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 220px;
+  padding: 12px 28px;
+  margin-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.5px !important;
+  margin-top: 10px;
+}
+
+.cContactSales:hover {
+  background-color: #5567D5 !important;
+text-decoration: none;
+}
+
+/* COLLAPS */
+.card-header,
+.card-body,
+.card {
+  padding: 0;
+  ;
+  text-align: left;
+  border: none !important;
+  background-color: transparent;
+}
+
+/* h5 button {
+      padding: 0 !important;
+    } */
+
+.cTable {
+  width: 100%;
+}
+
+.cTD1 {
+  width: 30%;
+  text-align: left;
+}
+
+.cTD2 {
+  width: 16.25%;
+  text-align: center;
+}
+
+.cTD3 {
+  width: 16.25%;
+  text-align: center;
+}
+
+.cTD4 {
+  width: 16.25%;
+  text-align: center;
+}
+
+.cTD5 {
+  width: 16.25%;
+  text-align: center;
+}
+
+.cTD6 {
+  width: 5%;
+  text-align: right;
+}
+
+.cTD5 span,
+.cTD4 span,
+.cTD3 span,
+.cTD2 span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.cTD5,
+.cTD4,
+.cTD3,
+.cTD2 {
+  /* text-transform: capitalize; */
+}
+
+.cTable.cTHeaders {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.cChoreoSection h1 {
+  color: #231F20;
+  font-family: Montserrat;
+  font-size: 43px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+
+.cTabCompare-1,
+.cTabCompare-2,
+.cTabCompare-3 {
+  display: none;
+}
+
+.cTabCompare-1.cShowTab,
+.cTabCompare-2.cShowTab,
+.cTabCompare-3.cShowTab {
+  display: block;
+}
+
+.cChoreoTableButton {
+  color: #231F20;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+  width: 100%;
+  outline: none;
+  text-align: left;
+  border: none;
+}
+
+.cChoreoTableButton:hover {
+  color: #5567D5;
+  text-decoration: none;
+}
+
+a.cPageLink {
+  color: #5567D5 !important;
+  font-weight: 600 !important;
+}
+
+a.cPageLink:hover {
+  text-decoration: underline;
+}
+
+button.cChoreoTableButton:focus,
+button.cChoreoTableButton:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#accordion .card {
+  
+  border-top: none;
+  border-radius: 0;
+  text-decoration: none !important;
+}
+
+#accordion .card.cTopCard {
+  border-top: 1px solid #5567d5 !important;
+}
+#accordion .card {
+  border-top: 1px solid #5567d5 !important;
+}
+
+.card-body td {
+  
+  border-top: 0.5px solid #D8D8D8;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px 0px;
+  vertical-align: top;
+}
+
+.card-body td span {
+  color: #F37321 !important;
+  font-size: 10px;
+}
+
+.card-body td em {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.cTHeaders td {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* .cChoreoTableButton.collapsed::after {
+  content: "+";
+  float: right;
+} */
+
+/* .cChoreoTableButton::after {
+  content: "-";
+  float: right;
+} */
+
+.container.cGrayBox {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  padding-bottom: 0;
+}
+
+.cDownloadProductc.OutlineButton {
+  background-color: transparent;
+  border: 1px solid #ef6711;
+  padding: 10px 20px;
+  border-radius: 6px;
+  float: right;
+  margin-top: 36px;
+  color: #ef6711;
+}
+
+.cDownloadProductc.OutlineButton:hover {
+  background-color: #000;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  float: right;
+  margin-top: 36px;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.cPriceCol ul li span {
+  color: #ef6711;
+  font-size: 13px;
+  margin-top: 0px;
+  display: initial;
+  display: inline-block;
+  line-height: 19px;
+  padding-left: 13px;
+  width: 100%;
+}
+
+.material-icons {
+  background: white;
+  width: 20px !important;
+  height: 20px !important;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #E7E7E7;
+  font-size: 10px;
+  line-height: 18px;
+  margin-top: -8px;
+}
+
+.popover-body {
+  padding: 20px;
+  color: #212529;
+  font-size: 6px !important;
+  box-shadow: 0 1px 50px 0 rgb(0 0 0 / 15%);
+}
+
+.popover-body p,
+.popover-body li {
+  color: #231F20;
+  font-family: Montserrat;
+  font-size: 14px !important;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.cInlineBanners {
+  border: 1px solid #DEDEDE;
+  display: inline-block;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #f5f6f6;
+  min-height: 135px;
+  margin-bottom: 30px;
+}
+
+.cInlineBanners p {
+  margin-bottom: 0 !important;
+}
+
+.cInlineBanners a {
+  font-weight: 700;
+  color: #f37321;
+}
+
+.h4ContainerFree {
+  display: inline-block;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #fff;
+
+}
+
+.h4ContainerFree p {
+  font-size: 15px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.cPriceCol {
+  font-size: 15px;
+  background-color: #ffffff;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.h4ContainerFree .popover-icon,
+.h4ContainerProfessional .popover-icon,
+.h4ContainerEnterprise .popover-icon,
+.h4ContainerEssentials .popover-icon {
+
+  margin-top: 1px;
+}
+
+.cPriceColContainer p {
+  font-size: 15px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 0rem;
+}
+
+.popover-icon {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid #ccc;
+}
+
+.popover-icon:hover {
+  color: #5567D5;
+}
+
+.h4ContainerProfessional {
+  display: inline-block;
+  width: 175px;
+}
+
+.h4ContainerEssentials {
+  display: inline-block;
+  width: 145px;
+}
+
+.h4ContainerEnterprise {
+  display: inline-block;
+  width: 155px;
+}
+
+.ccSliderRow {
+  margin-bottom: 30px;
+}
+
+.cBoxCTAcontainer {
+  /* position: absolute; */
+  width: 100%;
+  border: 0;
+  padding: 0 30px;
+  bottom: 30px;
+  left: 0;
+  text-align: center;
+}
+
+.cPriceCol.cLeft.cB2CFree.cGrayBox h4 {
+  margin-bottom: 10px;
+}
+
+.cOne {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  font-weight: 600;
+  color: #b3b3b3;
+}
+
+.cMillion {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  font-weight: 400;
+  font-size: 26px;
+  color: #b3b3b3;
+}
+
+/* V2 */
+.container.cWhiteBoxRound {
+  background-color: transparent !important;
+  padding: 0;
+  border-radius: 30px;
+  box-shadow: none !important;
+}
+
+ul.cChoreoPricingTabs {
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  border: 1px solid #DEDEDE !important;
+  border-radius: 6px;
+  padding: 0 !important;
+  box-shadow: -14px -24px 25px -8px rgba(0, 0, 0, 0.1) inset;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+ul.cChoreoPricingTabs li.nav-item a.active {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(47, 47, 47, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  transition: all 0.3s;
+}
+
+ul.cChoreoPricingTabs li.nav-item a,
+ul.cChoreoPricingTabs li.nav-item a.active {
+  border: none !important;
+  border-radius: 6px;
+  padding: 11px 32px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.ContactSalesCls .cNormalText,
+.ContactSalesCls .cAnnualText,
+.ContactSalesCls .cAditionalText {
+  display: none !important;
+}
+
+/* .ContactSalesCls .b2eProfsnal,
+    .ContactSalesCls .b2bProfsnal,
+    .ContactSalesCls .b2cProfsnal,
+    .ContactSalesCls .b2cBasic {
+      margin-bottom: 44px;
+    } */
+
+.cAnnualPrice {
+  font-weight: 700 !important;
+}
+
+
+.accordion-item {
+  border-right: none !important;
+  border-left: none !important;
+
+  border-bottom: none !important;
+  border-top: 1px solid #000 !important;
+  border-radius: 0 !important;
+}
+
+.accordion-button {
+
+	padding: 10px 0px !important;
+  color: #231F20;
+  /* font-family: Montserrat; */
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 32px;
+  width: 100%;
+  outline: none;
+  text-align: left;
+  border: none;
+  background: #fff !important;
+}
+
+.accordion-button:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.accordion-button:focus {
+
+	box-shadow: none !important;
+}
+
+.navbar-nav .dropdown-menu {
+	position: static;
+	width: 270px;
+}
+
+.cInnerPage {
+  background-color: #fff !important;
+}
+
+
+@media screen and (max-width: 950px) {
+  p.DecMinH {
+    min-height: auto;
+  }
+
+  p.DecMinH2 {
+    min-height: auto;
+  }
+
+  .cChoreoSection h3 {
+    line-height: 3rem;
+  }
+
+  .cHighlightedRow {
+    margin-top: -4.75rem !important;
+  }
+
+  .cSupportcol {
+    min-height: auto !important;
+  }
+
+  .cPriceCol {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    min-height: auto;
+  }
+
+  .cChoreoSection .cCenterTitleCOniatier h2 {
+    text-align: center;
+  }
+
+  .cBilling {
+    padding: 2rem 0;
+  }
+
+  .cGrayBackground {
+    padding: 2rem 0;
+  }
+
+  .cPriceCol:hover {
+    transform: none;
+    transition: all 0.3s;
+    position: static;
+    width: auto;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cHighlightedRow {
+    margin-top: -4.75rem !important;
+  }
+}
+
+
+.cBilling {
+  padding: 5rem 0;
+}
+
+.cChoreoSectionx {
+  padding-bottom: 5rem !important;
+}
+
+.cGrayBackground {
+  padding: 5rem 0;
+}
+
+.cSupportcol {
+  min-height: 520px !important;
+}
+
+span.DevBasic {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
+  min-height: 60px;
+}
+
+.cSuppport {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+p.DecMinH2 {
+    font-size: 16px !important;
+font-weight: 600;
+}
+
+p.DecMinH2.mB {
+  margin-bottom: 25px !important;
+
+
+}
+
+.cPriceMinH {
+  min-height: 200px;
+}
+
+p.DecMinH {
+  min-height: 78px;
+  font-size: 14px !important;
+}
+
+.cChoreoSection h4 {
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff !important;
+}
+
+.cBilling .card-header {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+}
+
+.cBilling .card {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  border-bottom: solid 1px #d9dde2 !important;
+}
+
+.cBilling .btn:focus {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.cBilling .btn {
+  padding: 1rem 0.75rem 1rem;
+}
+
+.cBilling .card-body {
+  padding: 0.5rem 1.25rem 1.25rem 0.75rem;
+}
+
+.cChoreoSection h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.cChoreoSection h2 {
+
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  line-height: 48px !important;
+}
+
+h3.mb-0 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 0rem 0.5rem;
+  font-weight: 600;
+  color: #5567D5!important;
+}
+
+h2.mainH2 {
+  padding-left: 15px;
+  margin-top: 2rem;
+}
+
+.btn-link:hover {
+  color: #181C20;
+  text-decoration: none;
+}
+
+span.cBlack {
+  color: #181C20;
+}
+
+.cBilling p {
+  text-align: left !important;
+  color: #40404B !important;
+  font-size: 18px !important;
+  letter-spacing: 0 !important;
+  line-height: 28px !important;
+  margin-bottom: 2.5rem !important;
+}
+
+a.cMore {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5567D5;
+  text-decoration: underline !important;
+  letter-spacing: 0;
+}
+
+a.cMore:hover {
+  color: #000000;
+  text-decoration: none !important;
+}
+
+ul.cTriangleBullet li {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+  line-height: 28px;
+}
 
 
 
@@ -818,6 +1768,219 @@ a.cSignupbutton.cChoreoButton  {
 
 
 
+.nav-link.cPricingTabs {
+  border: none !important;
+  padding: 11px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: relative;
+  text-indent: 0%;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  margin: 0;
+}
 
+.nav-link.cPricingTabs.cRightButton {
+  border-radius: 18px 0 0 18px;
+}
 
+.nav-link.cPricingTabs.cLeftButton {
+  border-radius: 0px 18px 18px 0px;
+}
 
+.cTabCOntrolContainer {
+  box-shadow: 0 1px 50px 0 rgba(0, 0, 0, 0.09);
+  padding: 0;
+  background: #fff;
+  border-radius: 20px;
+  height: auto;
+  z-index: 999999 !important;
+  position: absolute;
+  width: 100%;
+  top: -8px;
+  border: 2px solid #5567d5;
+  line-height: 0;
+  margin: 0 !important;
+  left: 0;
+}
+
+.cTabCOntrolContainer li.nav-item {
+  width: 50%;
+}
+
+.cPriceCol.tab-content,
+.cPriceCol.tab-content:hover {
+  padding: 4rem 0;
+  min-height: 0;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 1px 50px 0 rgba(0, 0, 0, 0.09) !important;
+  border: 2px solid #5567d5;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: #5567d5;
+}
+
+.cSliderContainer {
+  /* background: red; */
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  /* background: red; */
+}
+
+.cSliderContainer label {
+  margin-bottom: 34px;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16px;
+}
+
+#pills-tab {
+  margin: 0 !important;
+}
+
+.cTextAlignCenter {
+  text-align: center;
+}
+
+.cPriceCol .cSliderContainer li {
+  list-style: none;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  background-image: none !important;
+  padding-left: 0;
+}
+
+.cSubTotalTitle,
+.cSubTotals span {
+  float: left;
+  display: inline-block;
+}
+
+.cSubTotalTitle {
+  margin-right: 20px;
+}
+
+.cSlider {
+  margin-right: 9px;
+}
+
+.cSubTotals .b2cBasic {
+  font-size: 1.5rem !important;
+}
+
+.colwrap {
+  padding: 0 3rem;
+}
+
+.colwrap.cRightCol {
+  padding-right: 1.5rem !important;
+  display: inline-block;
+  width: 100%;
+}
+
+.colwrap.cLeftCol {
+  padding-left: 1.5rem !important;
+}
+
+.cSubTotals {
+  text-align: center;
+  /* margin-bottom: 0; */
+  display: inline-block;
+  /* background: red; */
+  /* margin-top: 4rem; */
+  padding-bottom: 2rem;
+  /* border-bottom: 1px solid; */
+  width: 100%;
+  margin-bottom: 2rem;
+  background: #f7f8fb;
+  padding: 22px;
+  border-radius: 14px;
+}
+
+.cRadioUL {
+  display: inline-block;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+}
+
+.cTopTotalCost .cSubTotalTitle {
+  display: block !important;
+  float: none;
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.cTopTotalCost {
+  margin-bottom: 30px;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__label-radio {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+.form__radio-button {
+  height: 23px !important;
+  width: 20px !important;
+  border: 5px solid #5567d5;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -4px !important;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #5567d5;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form__radio-input:checked~.form__label-radio .form__radio-button::after {
+  opacity: 1;
+}
+
+.form__label-radio {
+  padding-left: 30px;
+}
+
+.ui-slider-float .ui-slider-tip,
+.ui-slider-float .ui-slider-tip-label {
+
+  color: #5567d5 !important;
+
+}
+
+.cSmallCol {
+  padding-left: 0;
+  padding-right: 30px;
+}

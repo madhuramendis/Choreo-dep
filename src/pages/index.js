@@ -38,7 +38,11 @@ export default function Home() {
               <p>Run your apps, services, jobs easily with Choreo. Focus on your code, and leave it to Choreo to run it on production.</p>
             </Col>
             <Col sm={12} md={2}>&nbsp;</Col>
-            <Col sm={12} md={4}></Col>
+            <Col sm={12} md={4}>
+            <iframe src="https://consolev2.preview-dv.choreo.dev/signup_embedded" width="100%" type="text/html" frameBorder="0" allowTransparency="true" ></iframe>
+       
+
+            </Col>
           </Row>
 
 
@@ -60,64 +64,65 @@ export default function Home() {
               <Row>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.slack_0.8.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-01.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.github_0.9.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-02.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.asgardeo_0.5.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-03.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.asb_1.2.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-04.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.salesforce_0.10.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-05.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.calendar_0.11.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-06.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.shopify_1.4.1.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-07.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.hubspot_0.9.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-08.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.mail_0.10.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-09.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.google.sheets_0.9.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-10.webp" />
                   </div>
                 </Col>
                 <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.quickbooks_1.2.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-11.webp" />
                   </div>
                 </Col>
-                <Col sm={12} md={2}>
+                {/* <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/ballerinax_trigger.twilio_0.9.0.png" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-12.webp" />
                   </div>
-                </Col>
+                </Col> */}
+               
 
               </Row>
             </Col>
@@ -135,74 +140,75 @@ export default function Home() {
         <Container>
           <Row>
             <Col sm={12} md={12}>
-              <h2>Full stack hosting, with security: webapps, jobs, databases, APIs</h2>
+              <h2>Everything You Need to Build Apps in the Cloud</h2>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
+                <h3> Full stack hosting with security for webapps, jobs, databases and APIs</h3>
                 {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>Easily deploy your entire app stack—webapps, jobs, databases, and APIs. Streamline deployments, scaling, and management without fragmented tools. Secure your apps with built-in security features. Deploy in minutes, scale effortlessly, and focus on building your apps.</p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                <h3>VSCode plugin to do everything from there</h3>
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>Use VSCode’s Choreo plugin to do everything from your development workspace. Create projects, components then test, and troubleshoot from VSCode itself.</p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                <h3> Unit and integration testing</h3>
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>With comprehensive testing capabilities, you can seamlessly validate your code, APIs, and integrations, guaranteeing smooth functionality and enhanced performance. </p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
+                <h3>Troubleshooting with logs, traces, metrics, and alerts</h3>
                 {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>Use Choreo's built-in troubleshooting tools, including logs, metrics, traces, and alerts, to detect problems, drill down into application behaviors, and swiftly diagnose issues. </p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                <h3>Deploy to the cloud or your own server</h3>
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>Deploy your applications to a Choreo cloud, your own cloud account, servers, or development laptop, and switch as your needs evolve.</p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3>Troubleshooting with logs, metrics, alerts, observability</h3>
-                <img src="https://dummyimage.com/170x170/D9D9D9" />
+                <h3>Automated build and deploy</h3>
+                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                <a href="" className='cLearnMore'>Learn More</a>
+                <p>Just commit your code, and Choreo will build and ship it to production, ensuring zero downtime.</p>
+                {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
             </Col>
             </Row>
+            
 
-
+{/* 
             <Row>
             <Col sm={12} md={4} className='cCenterButton'></Col>
 
@@ -215,7 +221,9 @@ export default function Home() {
 
             <Col sm={12} md={4} className='cCenterButton'></Col>
 
-          </Row>
+          </Row> */}
+
+
 
          
 
@@ -226,7 +234,7 @@ export default function Home() {
 
 
 
-
+{/* 
 
 
 
@@ -305,47 +313,13 @@ export default function Home() {
 
           </Row>
         </Container>
-      </div>
+      </div> */}
 
 
 
 
 
-      <div className="cSection cWhiteBG">
-        <Container>
-          <Row>
-            <Col sm={12} md={12}>
-              <h2>Resource Cost Estimation</h2>
-
-            </Col>
-            <Col sm={12} md={12}>
-
-
-
-
-
-              <div className='cWhiteRoundedHighlightedBox'>
-              <Row>
-
-             
-           
-              <Col sm={12} md={6} className='cCommunityText'>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed do eiusmod</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-<a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/pricing/" target="_blank" rel="noopener" aria-label="Learn More">Lorem ipsum </a>
-
-              </Col>
-              <Col sm={12} md={6}></Col>
-
-
-
-              </Row>
-
-              </div>
-
-            </Col>
-          </Row></Container>
-      </div>
+      
 
 
 
@@ -359,17 +333,16 @@ export default function Home() {
             </Col>
             <Col sm={12} md={4}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
+                <img src="//wso2.com/files/marketplace-and-connections-blogbanner.png" />
 
                 <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
+                  <h3>Introducing Choreo Marketplace and Connections</h3>
 
 
 
 
 
-                  <a href="" className='cLearnMore'>Watch Video</a>
+                  <a href="https://wso2.com/library/blogs/introducing-choreo-marketplace-and-connections/" className='cLearnMore'>Read Blog</a>
                 </div>
 
               </div>
@@ -378,17 +351,16 @@ export default function Home() {
            
             <Col sm={12} md={4}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
+                <img src="https://wso2.com/files/buildpacksbanner.png" />
 
                 <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
+                  <h3>Multi-Language Support for Deploying Your Source Code with Buildpacks</h3>
 
 
 
 
 
-                  <a href="" className='cLearnMore'>Watch Video</a>
+                  <a href="https://wso2.com/library/blogs/multi-language-support-for-deploying-your-source-code-with-buildpacks/" className='cLearnMore'>Read Blog</a>
                 </div>
 
               </div>
@@ -415,7 +387,7 @@ export default function Home() {
 
             <Col sm={12} md={6}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/640x200/D9D9D9" />
+                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/CommunityCall2.webp" />
 
                 <div className='cResourcesInfo'>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -433,7 +405,7 @@ export default function Home() {
             </Col>
             <Col sm={12} md={6}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/640x200/D9D9D9" />
+                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/CommunityCall3.webp" />
 
                 <div className='cResourcesInfo'>
                   <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -462,7 +434,7 @@ export default function Home() {
 
             <Col sm={12} md={4} className='cCenterButton'>
            
-            <a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">More  Choreo Resources</a>
+            <a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="https://wso2.com/library/?product=choreo" target="_blank" rel="noopener" aria-label="Learn More">More  Choreo Resources</a>
 
 
             </Col>

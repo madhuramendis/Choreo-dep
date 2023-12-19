@@ -72,11 +72,11 @@ const TopNav = () => {
                 
               </Row>
             </NavDropdown>
-            <Nav.Link href="/blog" id="Blog" target="_blank">
+            <Nav.Link href="https://medium.com/choreo-tech-blog" id="Blog" target="_blank">
               Blog
             </Nav.Link>
 
-            <Nav.Link href="/pricing" id="Blog" target="_blank">
+            <Nav.Link href="/pricing" id="Blog">
               Pricing
             </Nav.Link>
 
@@ -88,7 +88,7 @@ const TopNav = () => {
             Enterprise
             </Nav.Link>
 
-            <Nav.Link href="/" id="Blog" target="_blank">
+            <Nav.Link href="https://console.choreo.dev/?visitor_id=645a09031d3023.48602168&utm_source=site&utm_medium=organic" id="Blog" target="_blank">
             Login
             </Nav.Link>
            
