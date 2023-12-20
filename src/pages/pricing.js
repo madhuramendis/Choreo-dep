@@ -11,10 +11,12 @@ import Table from 'react-bootstrap/Table';
 
 import Accordion from 'react-bootstrap/Accordion';
 
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Ratio from 'react-bootstrap/Ratio';
 
+import Card from 'react-bootstrap/Card';
+
+import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 
 
@@ -86,10 +88,26 @@ export default function Pricing() {
               <ul>
                 <li>2 projects</li>
                 <li>5 developers</li>
-                <li> Public repo </li>
+                <li> Public repo only 
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">You can add private repositories at a cost of $5 per component per month.</Tooltip>}>
+      <span className="d-inline-block cTooltipIcob">
+        <Button disabled style={{ pointerEvents: 'none' }}>
+         i
+        </Button>
+      </span>
+    </OverlayTrigger>
+                   </li>
                 <li>Scales down to 0 when not in use</li>
                 <li>Up to 10 transactions per second</li>
-                <li>Supports only Choreo’s Cloud Data Plane or a personal private data plane</li>
+                <li>Supports only Choreo’s Cloud Data Plane or a personal private data plane
+                <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Personal private data planes are recommended for development use and not for production use. Typically these are Kubernetes clusters on your laptop with Minikube, k3s, Rancher Desktop, Docker Desktop, etc.</Tooltip>}>
+      <span className="d-inline-block cTooltipIcob">
+        <Button disabled style={{ pointerEvents: 'none' }}>
+         i
+        </Button>
+      </span>
+    </OverlayTrigger>
+                </li>
               </ul>
               <p></p>
             </Card>
@@ -137,143 +155,19 @@ export default function Pricing() {
 
 
 
-<section className="cChoreoSection cGrayBackground">
-<Container>
- <Row>
-      <Col sm={12} md={12} lg={12}>
-        <div className="cSuppport">
-          <h2>Resource Cost Estimation</h2>
-        </div>
-      </Col>
-      <Col sm={12} md={4} lg={4}>&nbsp;</Col>
-  
-     <Col sm={12} md={4} lg={4}>
-        <div className="cTabCOntrolContainer ">
-          <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li className="nav-item">
-              <a className="nav-link cPricingTabs cRightButton active" id="monthly" data-toggle="pill" href="" role="tab" aria-controls="pills-home" aria-selected="true" aria-label="Monthly">Monthly</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link cPricingTabs cLeftButton" id="hourly" data-toggle="pill" href="" role="tab" aria-controls="pills-profile" aria-selected="false" aria-label="Hourly">Hourly</a>
-            </li>
-          </ul>
-        </div>
-      </Col>
-     <Col sm={12} md={4} lg={4}>&nbsp;</Col>
-      <Col sm={12} md={12} lg={12}>
-        <div className="cPriceCol tab-content" id="pills-tabContent">
-          <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-           <Col sm={12} md={4} lg={4}>&nbsp;</Col>
-            <div className="col-sm-12 col-md-4 col-lg-4 cTextAlignCenter cTopTotalCost">
-              <span className="cSubTotalTitle" id="total_cost_lable">Total Cost</span>
-              <span className="b2cBasic" id="total_cost_amount">$0.00</span>
-              <span className="cSubTotalTitle" id="required_more">If you require more <a href="/contact/?ref=choreopricing" aria-label="contact us">contact us</a>.</span>
+
+      <section class="cChoreoSection cGrayBackground cResourceCostEstimationTitle">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="cSuppport">
+                <h2>Resource Cost Estimation</h2>
+              </div>
+
             </div>
-           <Col sm={12} md={4} lg={4}>&nbsp;</Col>
-            <div className="clearfix"></div>
-            <Row>
-            <Col sm={12} md={8} lg={8} className='cSpLine'>
-              <div className="colwrap cRightCol">
-
-
-                <Col sm={12} md={4} lg={4} className='cSmallCol'>
-                  <div className="cSliderContainer">
-                    <label>CPU</label>
-                    <div className="cSlider">
-                      <div id="memory-slider" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0.0</span></span></div>
-                    </div>
-                  </div>
-                </Col>
-
-                <Col sm={12} md={4} lg={4} className='cSmallCol'>
-                  <div className="cSliderContainer">
-                    <label>RAM</label>
-                    <div className="cSlider">
-                      <div id="memory-slider2" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0.0</span></span></div>
-                    </div>
-                  </div>
-                </Col>
-
-                <Col sm={12} md={4} lg={4} className='cSmallCol'>
-                  <div className="cSliderContainer">
-                    <label>Storage</label>
-                    <div className="cSlider">
-                      <div id="memory-slider4" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
-                    </div>
-                  </div>
-                </Col>
-             
-                <Col sm={12} md={12} lg={2} className='cSmallCol'>
-                  <div className="cSliderContainer">
-                    <label>Network Egress</label>
-                    <div className="cSlider">
-                      <div id="memory-slider3" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
-                    </div>
-                  </div>
-                </Col>
-                <div className="cTextAlignCenter cSubTotals" id="resource_cost_section">
-                  <span className="cSubTotalTitle">Resource Cost</span>
-                  <span className="b2cBasic" id="resource_cost_amount">$0.00</span>
-                </div>
-              </div>
-            </Col>
-           <Col sm={12} md={4} lg={4}>
-              <div className="colwrap cLeftCol">
-                <div className="cSliderContainer">
-                  <div className="form__group">
-                    <div className="form__radio-group">
-                      <ul className="cRadioUL">
-                        <li>
-                          <input type="radio" name="component_options" id="developer" value="developer" className="form__radio-input" checked="checked"/>
-                          <label className="form__label-radio" for="developer">
-                            <span className="form__radio-button"></span>Developer
-                          </label>
-                        </li>
-                        <li>
-                          <input type="radio" name="component_options" id="payg" value="payg" className="form__radio-input"/>
-                          <label className="form__label-radio" for="payg">
-                            <span className="form__radio-button"></span> PAYG
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="cSliderContainer" id="work_email_div">
-                  <div className="form__group">
-                    <div className="form__radio-group">
-                      <label for="work_email">
-                        <input type="checkbox" id="work_email" name="work_email"/> Sign up with work email
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="cSliderContainer">
-                  <label>Components</label>
-                  <div className="cSlider">
-                    <div id="memory-slider5" className="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all ui-slider-float"><div className="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div><span className="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" ><span className="ui-slider-tip">0</span></span></div>
-                  </div>
-                </div>
-                <div className="cTextAlignCenter cSubTotals" id="component_cost_section">
-                  <span className="cSubTotalTitle">Component Cost</span>
-                  <span className="b2cBasic" id="component_cost_amount">$0.00</span>
-                </div>
-              </div>
-            </Col>
-            </Row>
           </div>
-
         </div>
-      </Col>
-   </Row>
-   </Container>
-</section>
-
-
-
-
+      </section>
 
 
 
@@ -284,7 +178,7 @@ export default function Pricing() {
 
 
 
-      <section className="cChoreoSection" style={{ paddingTop: 0 }}>
+      <section className="cChoreoSection cPaddingTop">
         <Container>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12 cCenterTitleContainer cReducePadding">
@@ -314,6 +208,56 @@ export default function Pricing() {
                 </tr>
               </tbody>
               </table>
+
+              <Accordion.Item eventKey="10">
+        <Accordion.Header>  Free tier</Accordion.Header>
+        <Accordion.Body className='card-body'>
+        <table className="cTable">
+                              <tbody>
+                                 <tr>
+                                    <td className="cTD1">
+                                    Components
+                                    </td>
+                                    <td className="cTD2">5 components </td>
+                                    <td className="cTD3">5 components   
+                              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">5 components free for the first 6 months when you sign up with a business email.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
+                                    </td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                                 <tr>
+                                    <td className="cTD1">
+                                    Resources (CPU, RAM, Storage etc)
+                                    </td>
+                                    <td className="cTD2">$100 credits     <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">$100 credits for any combination of CPU, RAM, storage, and network traffic.</Tooltip>}>
+      <span className="d-inline-block cTooltipIcob">
+        <Button disabled style={{ pointerEvents: 'none' }}>
+         i
+        </Button>
+      </span>
+    </OverlayTrigger> </td>
+                                    <td className="cTD3">$1,000 credits     <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">$1,000 credits for any combination of CPU, RAM, storage, and network traffic when you sign up with a business email.</Tooltip>}>
+      <span className="d-inline-block cTooltipIcob">
+        <Button disabled style={{ pointerEvents: 'none' }}>
+         i
+        </Button>
+      </span>
+    </OverlayTrigger></td>
+                                    <td className="cTD4">✓</td>
+                                 </tr>
+                             
+                          
+                              </tbody>
+                           </table>
+
+
+        </Accordion.Body>
+      </Accordion.Item>
 
       <Accordion.Item eventKey="0">
         <Accordion.Header>Developer and Operational</Accordion.Header>
@@ -352,9 +296,20 @@ export default function Pricing() {
                                     <td className="cTD2">Choreo Cloud</td>
                                     <td className="cTD3" >
                                        Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster 
+                                       
+                              <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">$1,000 credits for any combination of CPU, RAM, storage, and network traffic when you sign up with a business email.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
+
+
                                     </td>
                                     <td className="cTD4">
                                        Azure, AWS, GCP, OpenShift, VMWare Tanzu, and any Kubernetes cluster
+                                       Support for OpenShift, VMWare Tanzu, and any Kubernetes Cluster is in the roadmap.
                                     </td>
                                  </tr>
                               </tbody>
@@ -464,6 +419,13 @@ export default function Pricing() {
                                  <tr>
                                     <td className="cTD1">
                                        API analytics and insights
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 7 days.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD2">
                                        Limited
@@ -476,10 +438,26 @@ export default function Pricing() {
                                        API requests and calls
                                     </td>
                                     <td className="cTD2">
-                                       Limited
+                                       Limited 
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Up to a maximum of 2 million API requests/calls per month.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
+                                       
                                     </td>
                                     <td className="cTD3">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Up to a maximum of 2 million API requests/calls per month.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
+                                       
                                     </td>
                                     <td className="cTD4">Unlimited</td>
                                  </tr>
@@ -514,12 +492,28 @@ export default function Pricing() {
                                  <tr>
                                     <td className="cTD1">
                                        Logs
+
+                                       
                                     </td>
                                     <td className="cTD2">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 7 days.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 30 days</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD4">✓</td>
                                  </tr>
@@ -529,9 +523,23 @@ export default function Pricing() {
                                     </td>
                                     <td className="cTD2">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 7 days.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 30 days.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD4">✓</td>
                                  </tr>
@@ -541,6 +549,13 @@ export default function Pricing() {
                                     </td>
                                     <td className="cTD2">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Data retention up to a maximum of 7 days.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">✓</td>
                                     <td className="cTD4">✓</td>
@@ -555,7 +570,13 @@ export default function Pricing() {
                                     <td className="cTD3">
                                        Limited
                                     </td>
-                                    <td className="cTD4">✓</td>
+                                    <td className="cTD4">✓          <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Available only when using a private data plane.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger></td>
                                  </tr>
                               </tbody>
                            </table>
@@ -651,6 +672,13 @@ export default function Pricing() {
                                     </td>
                                     <td className="cTD2">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Select one of minimum size MySQL, PostgreSQL, or Redis DB for a period of 7 days. Beyond 7 days you can purchase these services starting from $18/month. Contact us for full pricing.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">Select a plan that suits you</td>
                                     <td className="cTD4">Select a plan that suits you</td>
@@ -661,6 +689,13 @@ export default function Pricing() {
                                     </td>
                                     <td className="cTD2">
                                        Limited
+                                       <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Select one of minimum size MySQL, PostgreSQL, or Redis DB for a period of 7 days. Beyond 7 days you can purchase these services starting from $18/month. Contact us for full pricing.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">Select a plan that suits you</td>
                                     <td className="cTD4">Select a plan that suits you
@@ -671,7 +706,13 @@ export default function Pricing() {
                                        Redis
                                     </td>
                                     <td className="cTD2">
-                                       Limited
+                                       Limited   <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Select one of minimum size MySQL, PostgreSQL, or Redis DB for a period of 7 days. Beyond 7 days you can purchase these services starting from $18/month. Contact us for full pricing.</Tooltip>}>
+                                <span className="d-inline-block cTooltipIcob">
+                                  <Button disabled style={{ pointerEvents: 'none' }}>
+                                    i
+                                  </Button>
+                                </span>
+                              </OverlayTrigger>
                                     </td>
                                     <td className="cTD3">Select a plan that suits you</td>
                                     <td className="cTD4">Select a plan that suits you</td>

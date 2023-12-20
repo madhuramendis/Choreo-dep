@@ -39,8 +39,8 @@ export default function Home() {
             </Col>
             <Col sm={12} md={2}>&nbsp;</Col>
             <Col sm={12} md={4}>
-            <iframe src="https://consolev2.preview-dv.choreo.dev/signup_embedded" width="100%" type="text/html" frameBorder="0" allowTransparency="true" ></iframe>
-       
+            {/* <iframe src="https://consolev2.preview-dv.choreo.dev/signup_embedded" title="Signup IFrame"></iframe> */}
+            <img className='cLogin2' src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/login2.jpg"/>
 
             </Col>
           </Row>
@@ -56,7 +56,7 @@ export default function Home() {
         <Container>
           <Row>
             <Col sm={12} md={12}>
-              <h2>Discover building blocks for your Cloud Native Application</h2>
+              <h2>Write in Any Language of Your Choice</h2>
 
             </Col>
             <Col sm={12} md={2}>&nbsp;</Col>
@@ -117,11 +117,11 @@ export default function Home() {
                     <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-11.webp" />
                   </div>
                 </Col>
-                {/* <Col sm={12} md={2}>
+                <Col sm={12} md={2}>
                   <div className='cWhiteRoundedHighlightedBox cLogoTile'>
-                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreo-logos-12.webp" />
+                    <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/ruby.webp" />
                   </div>
-                </Col> */}
+                </Col>
                
 
               </Row>
@@ -145,11 +145,11 @@ export default function Home() {
             </Col>
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
-                <h3> Full stack hosting with security for webapps, jobs, databases and APIs</h3>
+                <h3> Full stack hosting with security for webapps, APIs, jobs and databases </h3>
                 {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
-                <p>Easily deploy your entire app stack—webapps, jobs, databases, and APIs. Streamline deployments, scaling, and management without fragmented tools. Secure your apps with built-in security features. Deploy in minutes, scale effortlessly, and focus on building your apps.</p>
+                <p>Easily deploy your entire app stack—webapps, APIs, jobs and databases. Streamline deployments, scaling, and management without fragmented tools. Secure your apps with built-in security features. Deploy in minutes, scale effortlessly, and focus on building your apps</p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
               </div>
 
@@ -157,7 +157,7 @@ export default function Home() {
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
                 <h3>VSCode plugin to do everything from there</h3>
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
                 <p>Use VSCode’s Choreo plugin to do everything from your development workspace. Create projects, components then test, and troubleshoot from VSCode itself.</p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
@@ -167,7 +167,7 @@ export default function Home() {
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
                 <h3> Unit and integration testing</h3>
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
                 <p>With comprehensive testing capabilities, you can seamlessly validate your code, APIs, and integrations, guaranteeing smooth functionality and enhanced performance. </p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
@@ -178,7 +178,7 @@ export default function Home() {
               <div className='cGrayRoundedHighlightedBox'>
                 <h3>Troubleshooting with logs, traces, metrics, and alerts</h3>
                 {/* <h4>webapps, jobs, databases, APIs</h4> */}
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
                 <p>Use Choreo's built-in troubleshooting tools, including logs, metrics, traces, and alerts, to detect problems, drill down into application behaviors, and swiftly diagnose issues. </p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
@@ -188,7 +188,7 @@ export default function Home() {
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
                 <h3>Deploy to the cloud or your own server</h3>
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
                 <p>Deploy your applications to a Choreo cloud, your own cloud account, servers, or development laptop, and switch as your needs evolve.</p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
@@ -198,7 +198,7 @@ export default function Home() {
             <Col sm={12} md={4}>
               <div className='cGrayRoundedHighlightedBox'>
                 <h3>Automated build and deploy</h3>
-                {/* <img src="https://dummyimage.com/170x170/D9D9D9" /> */}
+                <img src="https://dummyimage.com/170x170/D9D9D9" />
 
                 <p>Just commit your code, and Choreo will build and ship it to production, ensuring zero downtime.</p>
                 {/* <a href="" className='cLearnMore'>Learn More</a> */}
@@ -368,17 +368,16 @@ export default function Home() {
             </Col>
             <Col sm={12} md={4}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://dummyimage.com/420x200/D9D9D9" />
+                <img src="https://wso2.com/files/zero-trust-banner.png" />
 
                 <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
+                  <h3>How We Implemented Zero Trust in Choreo</h3>
 
 
 
 
 
-                  <a href="" className='cLearnMore'>Watch Video</a>
+                  <a href="https://wso2.com/library/blogs/how-we-implemented-zero-trust-in-choreo/" className='cLearnMore'>Watch Video</a>
                 </div>
 
               </div>
@@ -387,17 +386,17 @@ export default function Home() {
 
             <Col sm={12} md={6}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/CommunityCall2.webp" />
+                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/cc1.png" />
 
                 <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
+                  <h5>Community Call</h5>
+                  <h3>Deploy Your Web Application with WSO2 Choreo</h3>
+
+<p>In this session, we’ll dive into the process of deploying your web applications with Choreo.</p>
 
 
 
-
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
+                  <a href="https://www.youtube.com/watch?v=HswVRAEnV4o" target='_blank' className='cLearnMore'>Watch Video</a>
                 </div>
 
               </div>
@@ -405,17 +404,17 @@ export default function Home() {
             </Col>
             <Col sm={12} md={6}>
               <div className='cWhiteRoundedHighlightedBox cResourcesTile'>
-                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/CommunityCall3.webp" />
+                <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/cc2.png" />
 
                 <div className='cResourcesInfo'>
-                  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Sed do eiusmod</h3>
+                <h5>Community Call</h5>
+                  <h3>Building Microservices with Choreo </h3>
 
 
+<p>In this session, we’ll dive into the process of building microservices with Choreo.</p>
 
 
-
-                  <a href="" className='cLearnMore'>Watch Video</a>
+                    <a href="https://www.youtube.com/watch?v=XVG0lxS2-gU" target='_blank' className='cLearnMore'>Watch Video</a>
                 </div>
 
               </div>
@@ -475,9 +474,9 @@ export default function Home() {
                 <img src="https://wso2.cachefly.net/wso2/sites/all/2023/images/choreodev/discord-icon-choreo.png"/>
               </Col>
               <Col sm={12} md={4} className='cCommunityText'>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed do eiusmod</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-<a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="/choreo/" target="_blank" rel="noopener" aria-label="Learn More">More  Choreo Resources</a>
+                <h3>Got questions about Choreo? Join our Discord community! </h3>
+<p>Connect with fellow developers, share insights, and access a wealth of knowledge and resources to enhance your cloud journey with Choreo. </p>
+<a className="cChoreoButton cMainSignupButtom cLearnMore cLearnMoreX" href="https://discord.com/invite/wso2" target="_blank" rel="noopener" aria-label="Learn More">Join Discord</a>
 
               </Col>
               <Col sm={12} md={3}></Col>

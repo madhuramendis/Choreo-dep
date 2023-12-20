@@ -143,7 +143,7 @@ h3 {
 	/* box-shadow: 2px 5px 10px 0 rgb(0 0 0 / 20%); */
 	background-color: #F7F8FB;
   width: 100%;
-  min-height: 440px;
+  min-height: 620px;
 
 }
 
@@ -180,6 +180,15 @@ h3 {
 .cGrayRoundedHighlightedBox h3 , .cGrayRoundedHighlightedBox h4, .cGrayRoundedHighlightedBox p {
   text-align: left;
   margin-bottom: 2rem;
+}
+
+
+.cGrayRoundedHighlightedBox h3 {
+  height: 100px;
+}
+
+.cGrayRoundedHighlightedBox p {
+  margin-bottom: 0;
 }
 
 .cLogoTile {
@@ -1245,6 +1254,11 @@ button.cChoreoTableButton:active {
   text-transform: uppercase;
 }
 
+.accordion-body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /* .cChoreoTableButton.collapsed::after {
   content: "+";
   float: right;
@@ -1618,6 +1632,10 @@ ul.cChoreoPricingTabs li.nav-item a.active {
   padding-bottom: 5rem !important;
 }
 
+.cChoreoSection.cPaddingTop {
+  padding: 5rem 0 !important;
+}
+
 .cGrayBackground {
   padding: 5rem 0;
 }
@@ -1983,4 +2001,65 @@ ul.cTriangleBullet li {
 .cSmallCol {
   padding-left: 0;
   padding-right: 30px;
+}
+
+iframe {
+	border: 0;
+	height: 870px;
+}
+
+.cResourceCostEstimationTitle {
+  padding-bottom: 0 !important;
+}
+.cResourceCostEstimationTitle h2 {
+  margin-bottom: 0 !important;
+}
+
+.cResourceCostEstimationTitle  .cSuppport {
+margin-bottom: 0;
+}
+
+.cTooltipIcob {
+  display: inline-block;
+  width: 20px !important;
+  height: 20px !important;
+  padding-left: 0 !important;
+  margin-left: 10px !important;
+}
+
+.cTooltipIcob button.btn {
+	pointer-events: none;
+	color: black !important;
+	background: #fff !important;
+	border: 1px solid #000 !important;
+	height: 20px !important;
+	width: 20px !important;
+	padding: 0 !important;
+	border-radius: 50% !important;
+	line-height: 0px;
+	font-weight: 800;
+}
+.cTooltipIcob button.btn:hover {
+	pointer-events: none;
+	color: #fff !important;
+	background: #000 !important;
+	border: 1px solid #000 !important;
+	height: 20px !important;
+	width: 20px !important;
+	padding: 0 !important;
+	border-radius: 50% !important;
+	line-height: 0px;
+	font-weight: 800;
+}
+
+.cTD4 {
+  display: none;
+}
+
+.cFooter {
+  border-top: 1px solid #cecece !important;
+}
+
+img.cLogin2 {
+  width: 290px !important;
 }
