@@ -77,7 +77,10 @@ letter-spacing: .008rem !important
 
 .cIntro {
     padding: 7rem 0 4rem !important;
-    background-color: #f7f8fb;
+    /* background-color: #f7f8fb; */
+    background-image: url(https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreodevbg2.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .cIntro p {
   font-size: 28px;
@@ -90,6 +93,8 @@ letter-spacing: .008rem !important
 .cSection.cWhiteBG {
  background-color: #fff;
 }
+
+
 
 .cGrayBackground, .cHighlightedSectionGrey {
 	background-color: #f7f8fb;
@@ -110,6 +115,14 @@ letter-spacing: .008rem !important
   margin-bottom: 48px;
   font-weight: 700 !important;
 }
+
+/* section.cIntro.cGrayBackground {
+  background-image: url(https://wso2.cachefly.net/wso2/sites/all/2023/images/webp/choreodev/choreodevbg.png) !important;
+  background-repeat: no-repeat;
+  background-image: 100%;
+
+} */
+
 
 h2 {
   font-size: 2rem !important;
@@ -134,18 +147,104 @@ h3 {
 
 
 .cGrayRoundedHighlightedBox {
-	padding: 40px;
-	border-radius: 30px;
-	min-height: auto;
-	margin-bottom: 30px;
+	padding: 30px 20px 20px 20px;
+	border-radius: 20px;
+	min-height: 90px;
+	margin-bottom: 20px;
 	text-align: center;
 	display: inline-block;
 	/* box-shadow: 2px 5px 10px 0 rgb(0 0 0 / 20%); */
-	background-color: #F7F8FB;
+	background-color: #fff;
   width: 100%;
-  min-height: 620px;
+  text-align: center;
+  /* display: table-cell;
+  vertical-align: middle;
+  width: 100%; */
+  /* min-height: 620px; */
+  border:2px solid #dadada;
 
 }
+
+.cIframe {
+  text-align: center;
+}
+
+
+.cGrayRoundedHighlightedBox.cCat_host ,  .cGrayRoundedHighlightedBox.cCat_Security , .cGrayRoundedHighlightedBox.cCat_Deployment {
+  transition: all 0.3s;
+  /* background-color:#f1e1fb; */
+  background-color: transparent;
+  border: 2px solid #f1e1fb !important;
+  /* color: #fff !important; */
+}
+
+.cGrayRoundedHighlightedBox.cCat_Security ,  .cGrayRoundedHighlightedBox.cCat_Security , .cGrayRoundedHighlightedBox.cCat_Security {
+  transition: all 0.3s;
+  /* background-color: #7eb5e6; */
+  /* color: #fff !important; */
+  background-color: transparent;
+  border: 2px solid #7eb5e6 !important;
+}  
+
+.cGrayRoundedHighlightedBox.cCat_Deployment ,  .cGrayRoundedHighlightedBox.cCat_Deployment , .cGrayRoundedHighlightedBox.cCat_Deployment {
+  transition: all 0.3s;
+  /* background-color: #adedf2;
+  color: #fff !important; */
+
+  background-color: transparent;
+  border: 2px solid #adedf2 !important;
+} 
+
+.cGrayRoundedHighlightedBox.cCat_Development ,  .cGrayRoundedHighlightedBox.cCat_Development , .cGrayRoundedHighlightedBox.cCat_Development {
+  transition: all 0.3s;
+  /* background-color: #adf2ad; */
+
+  background-color: transparent;
+  border: 2px solid #adf2ad !important;
+  /* color: #fff !important; */
+} 
+
+.cGrayRoundedHighlightedBox.cCat_Management ,  .cGrayRoundedHighlightedBox.cCat_Management , .cGrayRoundedHighlightedBox.cCat_Management {
+  transition: all 0.3s;
+  /* background-color: #f2cdad; */
+  /* color: #fff !important; */
+  background-color: transparent;
+  border: 2px solid #f2cdad !important;
+} 
+
+.cGrayRoundedHighlightedBox.cCat_Observability ,  .cGrayRoundedHighlightedBox.cCat_Observability , .cGrayRoundedHighlightedBox.cCat_Observability {
+  transition: all 0.3s;
+  /* background-color: #bfadf2; */
+  /* color: #fff !important; */
+  background-color: transparent;
+  border: 2px solid #bfadf2 !important;
+  
+}
+
+
+
+
+
+
+
+/* hover */
+
+/* .cGrayRoundedHighlightedBox.cCat_Security.cHiglightBox ,  .cGrayRoundedHighlightedBox.cCat_Security.cHiglightBox , .cGrayRoundedHighlightedBox.cCat_Deployment.cHiglightBox {
+  transition: all 0.3s;
+  background-color: #525ee2;
+  color: #fff !important;
+}  
+
+.cGrayRoundedHighlightedBox.cCat_host.cHiglightBox h3 , .cGrayRoundedHighlightedBox.cCat_Security.cHiglightBox h3 , .cGrayRoundedHighlightedBox.cCat_Deployment.cHiglightBox h3 {
+  color: #fff !important;
+  transition: all 0.3s;
+} */
+
+
+
+
+
+
 
 .cWhiteRoundedHighlightedBox {
 	padding: 40px;
@@ -160,6 +259,11 @@ h3 {
 	/* height: 120px; */
 	margin-bottom: 15px;
 }
+
+.cGrayRoundedHighlightedBox.cDouble  {
+  padding-top: 20px !important;
+}
+
 
 .cWhiteRoundedHighlightedLargeBox {
 	padding: 30px;
@@ -176,15 +280,27 @@ h3 {
 }
 
 
+.cWhiteRoundedHighlightedBox.cLogoTile {
+  padding: 20px !important;
+}
+
+
+
 
 .cGrayRoundedHighlightedBox h3 , .cGrayRoundedHighlightedBox h4, .cGrayRoundedHighlightedBox p {
-  text-align: left;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+.cGrayRoundedHighlightedBox h3 {
+  word-spacing: 3px !important;
+  letter-spacing: .008rem !important;
+  font-size: 16px !important;
+  line-height: 25px !important;
 }
 
 
 .cGrayRoundedHighlightedBox h3 {
-  height: 100px;
+  height: auto;
 }
 
 .cGrayRoundedHighlightedBox p {
@@ -192,7 +308,7 @@ h3 {
 }
 
 .cLogoTile {
-  padding: 15px;
+  padding: 10px;
 }
 
 .cLogoTile img {
@@ -202,6 +318,7 @@ h3 {
 .cGrayRoundedHighlightedBox  img {
   border-radius: 50%;
   margin-bottom: 2rem;
+  display: none;
 }
 
 
@@ -1568,6 +1685,11 @@ ul.cChoreoPricingTabs li.nav-item a.active {
   background-color: #fff !important;
 }
 
+.cCustomerLogos img {
+  width: 100%;
+}
+
+
 
 @media screen and (max-width: 950px) {
   p.DecMinH {
@@ -2063,3 +2185,153 @@ margin-bottom: 0;
 img.cLogin2 {
   width: 290px !important;
 }
+
+
+.cHomeTable td {
+	padding: 10px;
+	font-size: 20px;
+}
+
+.cHomeTable {
+  margin-bottom:4rem;
+}
+
+
+
+
+.cQtile {
+  width: 100%;
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+
+.cWhiteRoundedHighlightedBox.cQtile img {
+width: 25px;
+}
+
+
+.masonry {
+  column-count: 3; /* Set the number of columns */
+  column-gap: 10px; /* Adjust the gap between columns as needed */
+}
+
+.item {
+  margin-bottom: 10px; /* Adjust the spacing between items as needed */
+  break-inside: avoid; /* Prevent items from breaking across columns */
+  background-color: transparent;
+  padding: 0 10px;
+  border: none;
+  display: inline-block;
+}
+
+.cQmark {
+  margin-bottom: 15px;
+}
+
+.cQauthor {
+  font-size: 14px;
+}
+
+.cQlogo {
+  height: 30px;
+  width: auto !important;
+}
+
+.cFeature {
+  width: 40%;
+}
+.cFeaturHerokue , .cFeaturHerokue , .cFeatureAWS , .cFeatureVercel , .cFeatureRailway , .cFeatureRender {
+width: 10%;
+text-align: center;
+}
+
+.cFeatureTable th {
+  text-align: center;
+}
+
+.cFeatureTable img {
+  width: 22px;
+}
+.cFeatureTable p {
+  padding: 0;
+  margin: 0;
+}
+.cFeatureTable td {
+  text-align: center;
+  padding: 0 !important;
+}
+.cFeatureTable th {
+  padding: 0 !important;
+}
+.cFeatureTable td span  , th span{
+  padding: 10px 0 !important;
+  display: inline-block;
+  /* background-color: red; */
+  width: 100%;
+}
+
+.cFeatureTable td.cFeatureName {
+text-align: left;
+}
+
+
+.cDataRight span {
+
+    border-left: 1px inset  #5567D5;
+    border-right:  1px inset  #5567D5;
+  }
+
+  .cLastRow {
+    border: none !important;
+  }
+
+  td.cDataRight.cLastRow span {
+    border-left: 1px solid #5567D5 !important;
+    border-right:  1px solid #5567D5 !important;
+    border-bottom: 1px solid #5567D5 !important;
+    border-radius: 0 0 20px 20px  !important;
+    border-collapse: collapse;
+    padding: 0 !important;
+  }
+
+  th.cFeature {
+    text-align: left !important;
+  }
+
+  th.cFeatureChoreo.cTopShadow.cDataRight {
+   /* border: none !important;
+    border-radius: 20px;
+    padding: 0; */
+  }
+
+  .cFeatureChoreo.cTopShadow.cDataRight span {
+    border-left: 1px solid #5567D5 !important;
+    border-right:  1px solid #5567D5 !important;
+    border-top:  1px solid #5567D5 !important;
+    border-radius:20px 20px 0 0 ;
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+
+ 
+
+  }
+ 
+  .cCalloutCol {
+    text-align: center;
+  }
+  .cCalloutCol h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+  }
+  .cCalloutCol h3 {
+    font-weight: 700 !important;
+  font-size: 3.7rem !important;
+  line-height: 4rem !important;
+  color: #5567D5 !important;
+  padding-top: 0.5rem;
+  }
+
+
+  
